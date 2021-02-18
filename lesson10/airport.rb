@@ -35,7 +35,7 @@ heathrow = Airport.new
 
 
 heathrow.land(plane)
-puts heathrow.take_off(plane)
+heathrow.take_off(plane)
 
 class Plane
   def number_of_miles_flown
@@ -44,18 +44,32 @@ class Plane
   end
 
   def repairs(miles_flown)
+    @status = "good"
     if miles_flown >= 300
       puts "Plane needs to be serviced"
+      @status = "bad"
     else
       puts "Plane is ready to fly"
     end
+
+  def plane_status
+    if @status == "bad"
+      binary_status = 1
+    else
+      binary_status = 0
+    end
+  end
+
 end
 end
 
 
 miles_flown = plane.number_of_miles_flown
-puts plane.repairs(miles_flown)
+plane.repairs(miles_flown)
+puts plane.plane_status
 
+heathrow.land(plane)
+heathrow.take_off(plane)
 
 #could i write method in the plane class that determine
 #ranom number of miles flows -  rand(500)
