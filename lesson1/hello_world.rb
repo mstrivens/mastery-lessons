@@ -1,8 +1,3 @@
-
-
-
-
-
 def bonus_time(salary, bonus)
   #your code here
   if bonus == true
@@ -11,7 +6,6 @@ def bonus_time(salary, bonus)
     return salary
   end
 end
-
 
 puts bonus_time(10, true)
 

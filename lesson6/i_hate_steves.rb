@@ -1,11 +1,10 @@
 puts "Welcome User"
 name = gets.chomp
-
-    if name[0] == "S"
-        puts name.upcase
-    else
-        puts "Hi, #{name}, nice to meet you."
-    end
+if name[0] == "S"
+  puts name.upcase
+else
+  puts "Hi, #{name}, nice to meet you."
+end
 
 #if the users name begins with S, shout it back at them.
 #how do i determine what letter the name starts with?

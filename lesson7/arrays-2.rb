@@ -19,8 +19,6 @@ test_tweets.each do |strings|
   strings = strings.split("!").join(" ").split(".").join(" ").split(" ")
   strings.each do |words|
   if banned_phrases.include?(words).gsub(word, "Censored")
-
-    
   else
     puts words
   end

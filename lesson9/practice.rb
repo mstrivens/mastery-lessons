@@ -5,7 +5,6 @@ def random_card
            "jack", "queen", "king", "ace"]
 
   cards[rand(13)]
-
 end
 
 def move

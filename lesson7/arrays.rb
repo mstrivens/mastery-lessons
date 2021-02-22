@@ -16,13 +16,13 @@ current_index = 0
 banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
 
 while current_index < test_tweets.length do
-tweet = test_tweets[current_index].split("!").join(" ").split(".").join(" ").split(" ")
-tweet.each {|word|
+  tweet = test_tweets[current_index].split("!").join(" ").split(".").join(" ").split(" ")
+  tweet.each {|word|
   if banned_phrases.include?(word)
     puts "CENSORED"
   else
     puts word
-  end}
+  end
+}
 current_index += 1
-
 end
