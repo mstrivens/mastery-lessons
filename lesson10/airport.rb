@@ -71,6 +71,7 @@ puts plane.plane_status
 heathrow.land(plane)
 heathrow.take_off(plane)
 
+
 #could i write method in the plane class that determine
 #ranom number of miles flows -  rand(500)
 #if that number of miles > 300 then place needs to be maintained
